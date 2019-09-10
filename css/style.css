@@ -1,4 +1,91 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+}
+
+h1 {
+  font-size: 14px;
+  font-family: system-ui, sans-serif;
+  text-transform:uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 150%;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
+  padding-top: 60px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%
+}
+
+.preview {
+  /*background-color: #dadada;*/
+  height: 300px;
+  margin: 2em 0;
+  width: 100%
+  background-size: cover;
+  background-position: left;
+}
+
+.baku {
+  background-image: url(../images/baku.jpg);
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+}
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+}
+
+.london {
+  background-image: url(../images/london.png);
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+.preview {
+  float: right;
+  height: 200px;
+  margin: 1% 1%;
+  width: 48%;
+  }
+  h3 {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 70%;
+  }
+.preview {
+  background-size: cover;
+  float: left;
+  height: 200px;
+  margin: 2em 1%;
+  width: 23%;
+  }
+  h3 {
+    font-size: 20px;
+    padding-top: 0px;
+    margin-left: 20px;
+  }
 }
